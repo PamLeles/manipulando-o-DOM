@@ -1,0 +1,81 @@
+--DOM
+Document Object Model
+-o DOM HTML é um padrão de como acessar e modificar os elementos
+HTML de uma pagina.
+
+--BOM
+Browser Object Model
+- tudo que etá dentro do objeto do Window.
+>Document
+>history
+>location
+>screen
+>navegator
+
+--metodos
+estrutra html: >tag , >id (id deve ser único), >classe.
+
+--Selecionando os elementos.
+
+document.getElementById('titulo');
+docuemnto.getElementsByTagName('li');
+document.getElementsByClassName('textos');
+document.querySlectorAll('');
+
+-- Adicionar e deletar um elemento
+
+            métodos                 |       Descrição
+____________________________________|______________________________
+document.createElement(element)     |   Criar um novo elemento HTML
+document.removeChild(element)       |    Remove um elemento
+document.appendChild(element)       |    Adciciona um elemento
+document.replaceChild(new,old)      |    Substitui um elemento
+
+--manipular os estilos HTML
+
+-classes
+Elemnt.classList
+exemplo
+
+const meuElemento = document.getElementById(""meu-elemento);
+meuElemento.classList.add("novo-estilo"); // adciona a classe "meu estilo"
+meuElemento.classList.remove("classe");// remove a classe "classe"
+meuElemento.classList.toggle("dark-mode")//adiciona a classe "dark-mode"
+caso ela não faça parte da lista, e ela remove caso faça parte.
+
+-CSS 
+acessando diretamente o CSS de um elemento
+document.getElementsByTagName("p").style.color = "blue";
+
+-eventos:
+
+    eventos de mouse 
+>mouseover, mouseout
+
+    eventos de clique
+>click,dbclick
+
+       eventos  atualização
+>chamge,load
+
+--Event listener
+diretamente no js, cria um evento que vai ser acionado no momento
+em que o usuario realizar um determinada ação;
+
+exemplo:
+const botao = document.getElementById("meuBotao");
+botao.addEventListener("click",outraFuncao);//("tipo de evento", função);
+
+--Atributo HTML 
+especificar a função a ser chamada diretamente no elemento HTML;
+____________________________________________________________________________________________
+
+Atividade: Light Mode/Dark Mode
+1.Crie uma estrutura básica de projeto front-end (HTML, CSS e JS)
+2.Copie o HTML e o CSS deste repositório
+3.Crie um arquivo chamado scripts.js na sua pasta assets/js
+4.Selecione os elementos: h1, button, footer e body
+5.Se os elementos possuirem a classe dark-mode, modifique seus
+estilos. Caso contrário, volte os estilos para o original
+
+
