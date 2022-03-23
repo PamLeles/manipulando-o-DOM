@@ -8,3 +8,6 @@ ___
 <p>4.Selecione os elementos: h1, button, footer e body
 <p>5.Se os elementos possuirem a classe dark-mode, modifique seus
 estilos. Caso contrário, volte os estilos para o original
+
+## Objetivo: 
+  ![git miniatuda da pagina](https://github.com/PamLeles/manipulando-o-DOM/blob/main/dark-mode.gif)
